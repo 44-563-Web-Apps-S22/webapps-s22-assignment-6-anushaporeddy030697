@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
     <title>computer orders page</title>
+    <style>
+        h2 {
+          background-color: rgb(127, 206, 144);
+          color:azure;
+          display:inline-flex;
+          font-family: 'Times New Roman', Times, serif;
+      }
+      </style>
  
 <body>
     <h1>Anusha Poreddy orders a computer</h1>
@@ -19,7 +27,7 @@
        value="cell" >
     <label for="cellService">Cell service</label></br>
   
-    <input type="button" onclick="orderComputer()" value="Order a Computer">
+    <input type="button" onclick="orderComputer()" value="Order a Computer" style="background-color:aquamarine;">
   </form>
   
   
@@ -32,7 +40,7 @@
     <label for="propertyvalue">Enter a value</label>
     <input type ="text" id="propertyvalue" name="propertyvalue" autofocus > <br> <br>
   
-    <input type="button" onclick="updateComputer()" value="Update the computer">
+    <input type="button" onclick="updateComputer()" value="Update the computer" style="background-color:bisque;">
   </form>
   
   
@@ -92,6 +100,7 @@
     }
   }
   </script>
+  
   
 
 
