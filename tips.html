@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <title>looping computation</title>
+ 
+<body>
+    <h1>Anusha poreddy computes tips</h1>
+
+<h2>Getting input</h2>
+
+<form>
+    <label for="form1_age">Enter a check amount</label>
+    <input type ="number" id="amt" name="form1_age"  value=20> <br>
+
+    <label for="form1_nick">Enter tip increase</label>
+    <input type ="number" id="tip" name="form1_nick" value=0.05  > <br>
+
+    <input type="button" onclick="tips()" value="Find tips">
+</form>
+
+
+<p id="result">This text will be replaced </p>
+
+<script>
+    function tips(){
+    console.log("Getting form values");
+    var x=document.getElementById("amt").value
+    x=parseInt(x);
+    console.log(typeof x);
+    let y=document.getElementById("tip").value
+    console.log(y);
+    let res=x/10;
+    let tip=x*0.01;
+    let result="";
+    console.log(res,tip);
+    for(let i=0;i<10;i++){
+    res=res+tip;
+    console.log( res.toFixed(1));
+     }
+    out.innerHTML="Tip amounts by increase of "+res+"are"+result;
+    }
+    </script>
+
+
+
+</body>
+</html> 
